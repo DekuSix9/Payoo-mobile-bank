@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payoo homepage</title>
+      <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+<main class=" flex justify-center items-center">
+<div class="mockup-phone bg-base-200 ">
+  <div class="mockup-phone-camera"></div>
+  <div class="mockup-phone-display text-white grid place-content-center">
+
+    <div class="stats shadow">
+  <div class="stat text-center">
+   
+    <div class="stat-value text-black" id="account-balance">9400</div>
+    <div class="stat-desc text-black">Available Balance</div>
+  </div>
+</div>
+
+ <div class="divider"></div>
+ <!-- Action Buttons -->
+ <div>
+    <button class="btn btn-lg bg-white" id="btn-show-add-money">Add money</button>
+    <button class="btn btn-lg bg-white" id="btn-show-cash-out">Cash out</button>
+
+ </div>
+ <div class="divider"></div>
+       <!-- Add Money -->
+   <div class="  card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl" id="add-money-form">
+      <div class="card-body">
+        <fieldset class="fieldset">
+          <label class="label text-black">Amount</label>
+          <input type="text" required class="input text-black" id="add-money" placeholder="Amount" />
+          <label class="label text-black">Pin</label>
+          <input type="password" class="input text-black" id="add-pin" autocomplete="off" required placeholder="Pin" />
+         
+          <button class="btn btn-neutral mt-4 text-white bg-blue-900" id="btn-add-money">Add money</button>
+        </fieldset>
+      </div>
+    </div>
+
+     <!-- Cash Out -->
+      
+   <div id="cash-out-form" class=" hidden  card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+      <div class="card-body">
+        <fieldset class="fieldset">
+          <label class="label text-black">Amount</label>
+          <input type="text" required class="input text-black" id="cash-out" placeholder="Amount" />
+          <label class="label text-black">Pin</label>
+          <input type="password" class="input text-black" id="cash-out-pin" autocomplete="off" required placeholder="Pin" />
+         
+          <button class="btn btn-neutral mt-4 text-white bg-blue-900" id="btn-cash-out">Cash Out</button>
+        </fieldset>
+      </div>
+    </div>
+
+
+  </div>
+</div>
+</main>
+
+<script src="/JS/home.js"></script>
+<script src="/JS/Cashout.js"></script>
+<script src="JS/Features.js"></script>
+  
+</body>
+</html>
